@@ -101,6 +101,10 @@ body {
   line-height: 1.4rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header_bottom-right {
   color: #fff;
   padding-bottom: 1rem;

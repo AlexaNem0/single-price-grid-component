@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --Cyan: hsl(180, 62%, 55%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  padding: 1.5rem;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  width: 38rem;
+  height: 30rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  gap: 0.15rem;
+}
+
+.top {
+  height: 14rem;
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2rem 1rem 2rem 2rem;
+}
+.top_header {
+  color: var(--Grayish-Blue);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.top_guarantee {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+}
+
+.top-paragraph {
+  color: var(--Grayish-Blue);
+  line-height: 2rem;
+  margin-bottom: -7rem;
+}
+
+.bottom-left {
+  height: 16rem;
+  background-color: var(--Grayish-Blue);
+  color: #fff;
+  padding: 2rem 1rem 0 2rem;
+  line-height: 2rem;
+  border-radius: 0 0 0 0.5rem;
+}
+
+.span_bottom_left {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.per_month {
+  color: var(--Cyan);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-primary {
+  width: 13rem;
+  height: 3rem;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin-top: 2.5rem;
+  box-shadow: 0 0 5px 3px var(--Cyan);
+  cursor: pointer;
+}
+.bottom-right {
+  background-color: var(--Cyan);
+  color: var(--Light-Gray);
+  padding: 2rem 1rem 0 2rem;
+  border-radius: 0 0 0.5rem 0;
+  line-height: 1.4rem;
+}
+
+.header_bottom-right {
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 0.15rem;
+  }
+  .top {
+    grid-area: 1 / 1 / 1 / 1;
+    padding: 1rem 1rem 2rem 2rem;
+    margin-top: 2rem;
+  }
+  .top-paragraph {
+    line-height: 1.3rem;
+  }
+  .bottom-left {
+    border-radius: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-right {
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  .btn-primary {
+    margin-top: 2rem;
+  }
+}
